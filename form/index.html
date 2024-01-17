@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form responsive</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <form action="/script.php" method="post" target="_blank" autocomplete="on" novalidate Accept-Charset:utf-8>
+        <label for="search">Search</label>
+        <input type="search" name="search" placeholder="search" size="100"   disabled>
+        <br>
+        <label for="image"></label>
+        <input type="image" name="image" src="/image.png" width="120" height="70">
+        <br>
+        <label for="first">First Name</label>
+        <input type="text" name="first" placeholder="your first name" maxlenght="3" autofocus>
+        <label for="last">Last Name</label>
+        <input type="text" name="last" placeholder="your last name" min="1" max="5">
+        <br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" name="gender">
+        <br>
+        <label for="date">Birthday:</label>
+        <input type="date" name="date"><br>
+        <input list="browsers">
+          <datalist>
+            <option value="morocco">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+         </datalist><br>
+      <select>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JavaScript</option>
+        <option>PHP</option>
+      </select><br>
+      <select name="course" id="courses">
+        <optgroup label="Front-End">
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JS">JS</option>
+        </optgroup>
+        <optgroup label="Back-End">
+          <option value="PHP">PHP</option>
+          <option value="MYSQL">MYSQL</option>
+        </optgroup>
+      </select><br>
+        <label for="datetime-local">When will you start exercising?</label>
+        <input type="datetime-local" name="datetime-local"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" value="info@gmail.com">
+        <br>
+        <fieldset>
+            <legend>Personal Details:</legend>
+        <ul>
+           <li><label for="checkfoot">FootBall</label>
+        <input type="checkbox" name="checkfoot">
+        <input type="range" min="0" max="50">
+        </li>
+           <li><label for="checkbasket">BascketBall</label>
+        <input type="checkbox" name="checkbasket">
+        <input type="range" min="0" max="50">
+        </li>
+           <li><label for="checktennis">TennisBall</label>
+        <input type="checkbox" name="checktennis">
+        <input type="range" min="0" max="50">
+        </li>
+        </ul></fieldset><br>
+        <label for="color">Select your favorite color:</label>
+        <input type="color" name="color">
+        <br>
+        <label for="url">URL</label>
+        <input type="url" name="url" placeholder="entre URL" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="password" pattern="[A-Za-z]{3}" title="Three letter country code">
+        <br>
+        <label for="time">Time</label>
+        <input type="time" name="time">
+        <br>
+        <label for="week">Week</label>
+        <input type="week" name="week">
+        <br>
+        <label for="month">Month</label>
+        <input type="month" name="month">
+        <br>
+        <label for="number">Number</label>
+        <input type="number" name="number" step="3">
+        <br>
+        <label for="tel">Tel</label>
+        <input type="tel" name="tel" value="0647930288" readonly>
+        <br>
+        <label for="file">CV</label>
+        <input type="file" name="file" multiple>
+        <br>
+        <textarea name="message" rows="10" cols="100">This is a default text</textarea><br>
+        <output>5932</output><br>
+        <label for="submit"></label>
+        <input type="submit" name="submit" value="Submit">
+        <label for="button"></label>
+        <input type="button" name="button" value="Click">
+        <label for="reset"></label>
+        <input type="reset" name="reset" value="Reset">
+        <label for="hidden"></label>
+        <input type="hidden" name="hidden">
+    </form>
+</body>
+</html>
